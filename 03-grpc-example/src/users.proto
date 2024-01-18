@@ -1,0 +1,34 @@
+syntax = "proto3";
+
+service UsersService {
+    rpc GetUsers (GetUsersParams) returns (GetUsersResult) {}
+    rpc GetUser (GetUserParams) returns (GetUserResult) {}
+    rpc CreateUser (CreateUserParams) returns (CreateUserResult) {}
+}
+
+message User {
+    string id = 1;
+    string name = 2;
+}
+
+message GetUsersParams {}
+
+message GetUsersResult {
+    repeated User users = 1;
+}
+
+message GetUserParams {
+    string id = 1;
+}
+
+message GetUserResult {
+    User user = 1;
+}
+
+message CreateUserParams {
+    string name = 1;
+}
+
+message CreateUserResult {
+    User user = 1;
+}
