@@ -4,7 +4,7 @@ async function executeQuery(data) {
   try {
     const response = await axios({
       method: "POST",
-      url: "http://localhost:4000",
+      url: "http://localhost:4000/graphql",
       data,
     });
 
