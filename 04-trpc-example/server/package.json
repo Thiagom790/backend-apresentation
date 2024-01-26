@@ -14,7 +14,9 @@
   "dependencies": {
     "@trpc/server": "^11.0.0-next-beta.193",
     "@types/cors": "^2.8.17",
+    "@types/ws": "^8.5.10",
     "cors": "^2.8.5",
+    "ws": "^8.16.0",
     "zod": "^3.22.4"
   }
 }
